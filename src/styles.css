@@ -1,0 +1,89 @@
+.App {
+  font-family: sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* CSS HEX */
+  --yellow: #f6ae2d;
+  --languid-lavender: #e8d7ffff;
+  --black: #030303;
+  background-color: var(--languid-lavender);
+}
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin: 1rem 0;
+  text-align: center;
+  color: var(--black);
+}
+h1 span {
+  color: var(--yellow);
+}
+.r-category {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.r-category input {
+  font-family: "Playfair Display", serif;
+  cursor: pointer;
+  background-color: var(--yellow);
+  border: none;
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--black);
+  transition: 0.5s ease-out;
+}
+.r-category input:focus {
+  transform: scale(1.2);
+  outline: none;
+  border: 1px solid var(--black);
+}
+h2 {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  color: var(--black);
+  font-size: 2rem;
+  text-transform: capitalize;
+  text-shadow: -1px 1px 5px yellow, -1px 1px 5px yellow, -1px 1px 5px yellow;
+}
+.series-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  font-family: "Playfair Display", serif;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 1rem;
+  margin: 1rem auto;
+  width: 80vw;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 5px rgb(51, 46, 46);
+}
+.card h3 {
+  text-align: center;
+  margin: 0.4rem;
+  font-size: 1.3rem;
+}
+.card a {
+  text-decoration: none;
+}
+@media all and (min-width: 768px) {
+  .card {
+    width: 30vw;
+    margin: 1rem;
+  }
+  .r-category input {
+    margin: 1rem;
+  }
+}
